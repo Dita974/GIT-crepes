@@ -22,18 +22,21 @@
         public $oeufs;        //quantité d'oeuf
         public $sucre;       //quantité en gramme
         private $sel;          //quantité en pincée
+        
 
 
         public function __construct(
             $farine,
             $oeufs,
             $sucre,
-            $sel
+            $sel,
+            $caramel
         ){
             $this -> farine = $farine;
             $this -> oeufs = $oeufs;
             $this -> sucre = $sucre;
             $this -> sel = $sel;
+            $this -> caramel = $caramel;
 
         }
 
@@ -48,7 +51,24 @@
         
         public function getSel(){
             return $this -> sel;
-    }
+        }
+    
+        public function setCaramel($caramel){
+            return $this -> caramel = $caramel;
+        }
+        public function getCaramel(){
+            return $this -> caramel;
+        }
+
+        public function topping ($topping1,$topping2) {
+            array_push($this->topping,$topping1,$topping2);
+        }
+
+
+        
+
+
+
 
     }
 

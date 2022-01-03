@@ -13,9 +13,10 @@
     require './index.php';
 
     
-    $crepe1 = new Crepe(150, 3, 50, 2);
+    $crepeAuSucre = new Crepe(150, 3, 50, 2);
   
-   var_dump($crepe1 -> afficher_recette());
+//    var_dump($crepe1 -> afficher_recette());
+   echo $crepeAuSucre -> afficher_recette();
 ?>
 
 </main>

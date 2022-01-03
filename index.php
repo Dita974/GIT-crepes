@@ -1,11 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crepes</title>
+</head>
+<body>
+    <main>
+    
+
 <?php
 
     class Crepe {
 
-        public $farine = 150;     //quantité en gramme
-        public $oeufs = 3;        //quantité d'oeuf
-        public $sucre = 50;       //quantité en gramme
-        public $sel = 2;          //quantité en pincée
+        public $farine;     //quantité en gramme
+        public $oeufs;        //quantité d'oeuf
+        public $sucre;       //quantité en gramme
+        public $sel;          //quantité en pincée
 
 
         public function __construct(
@@ -23,10 +35,11 @@
 
         
         function afficher_recette(){
-            echo "ajouter" . $farine . "g de farine \n";
-            echo "ajouter" . $oeufs . "d'oeufs \n";
-            echo "ajouter" . $sucre . "g de sucre \n";
-            echo "ajouter" . $sel . "pincée de sel \n";
+            echo 'Pour ma recette de crêpe, j\'utilise : <br>';
+            echo $this -> farine. 'g de farine \n';
+            echo $this -> oeufs . 'd\'oeufs \n';
+            echo $this -> sucre . 'g de sucre \n';
+            echo $this -> sel . 'pincée de sel \n';
         }
         
     }
@@ -37,3 +50,9 @@
     // function ajouter_du_sucre(){
     //     echo "ajouter . '$sucre' . g de sucre";
     // }
+    ?>
+
+
+    </main>
+</body>
+</html>

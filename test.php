@@ -24,7 +24,9 @@
    echo  "\n". $crepe -> getCaramel();
 
    
-   $crepe -> topping("Vanille","Chocolat");
+   $crepe -> topping ("Vanille","Chocolat");
+
+   $crepe -> unset ("Chocolat");
 
 
 var_dump($crepe);

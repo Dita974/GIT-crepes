@@ -63,11 +63,11 @@
         public function topping ($topping1,$topping2) {
             array_push($this->topping,$topping1,$topping2);
         }
-
-
         
 
-
+        public function unset($value){
+            unset($this->topping[array_search($value, $this->topping)]);
+        }
 
 
     }
